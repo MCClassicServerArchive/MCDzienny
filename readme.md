@@ -1,3 +1,6 @@
+# THIS DECOMP IS UNOFFICIAL
+Since I wanted to have source with this I used this decomp for source. THIS IS NOT OFFICIAL AND IS VERY BUGGY. The release is official and downloaded from the official site.
+
 # MCDzienny Decompilation
 An open source decompilation of MCDzienny which was the choice if you wanted a lava survival server. This server software wasn't updated for quite some time, and it wont be updated at all due to it's closed source nature.
 
