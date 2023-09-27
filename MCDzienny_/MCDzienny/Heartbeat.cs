@@ -121,7 +121,7 @@ namespace MCDzienny
         {
             var text = "";
             text += staticVars;
-            var uriString = "https://minecraft.net/heartbeat.jsp";
+            var uriString = "https://api.betacraft.uk/heartbeat.jsp";
             var num = 0;
             try
             {
@@ -143,7 +143,7 @@ namespace MCDzienny
                     {
                         var stringBuilder2 = new StringBuilder();
                         stringBuilder2.AppendFormat(
-                            "public={0}&max={1}&users={2}&port={3}&version={4}&salt={5}&name={6}&software=MCDzienny",
+                            "public={0}&max={1}&users={2}&port={3}&version={4}&salt={5}&name={6}&software=MCDzienny 12.2.0.0",
                             Server.isPublic, Server.players, Player.number - num2, Server.port, 7,
                             Server.SaltClassiCube, UrlEncode(Server.name));
                         text = stringBuilder2.ToString();
@@ -242,7 +242,7 @@ namespace MCDzienny
                 if (ex2.Status == WebExceptionStatus.Timeout && type == Beat.Minecraft && Server.logbeat)
                     beatlogger.WriteLine("Timeout detected at " + DateTime.Now);
                 if (type == Beat.Minecraft && hash == null)
-                    Server.s.Log("Warninig: Couldn't get response from minecraft.net website. Retrying...");
+                    Server.s.Log("Warning: Couldn't get response from betacraft.uk. Retrying...");
             }
             catch
             {

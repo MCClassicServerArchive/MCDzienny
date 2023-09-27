@@ -1020,11 +1020,7 @@ namespace MCDzienny
             {
                 Player.players.ForEach(delegate(Player p)
                 {
-                    if (p.IsCpeSupported || p.IsUsingWom) return;
-                    Player.SendMessage(p, "------------- " + p.PublicName + " -------------");
-                    Player.SendMessage(p, "|%c Please play Minecraft Classic on classicube.net");
-                    Player.SendMessage(p, "|%c minecraft.net/classic will stop to work soon!");
-                    Player.SendMessage(p, "|%c classicube.net is free, so enjoy :)");
+                    return;
                 });
             };
             timer.Start();

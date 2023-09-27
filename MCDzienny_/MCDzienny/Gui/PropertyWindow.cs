@@ -530,7 +530,7 @@ namespace MCDzienny.Gui
                 {
                     streamWriter.WriteLine(
                         "# Edit the settings below to modify how your server operates. This is an explanation of what each setting does.");
-                    streamWriter.WriteLine("#   server-name\t=\tThe name which displays on minecraft.net");
+                    streamWriter.WriteLine("#   server-name\t=\tThe name which displays on server lists");
                     streamWriter.WriteLine("#   motd\t=\tThe message which displays when a player connects");
                     streamWriter.WriteLine("#   port\t=\tThe port to operate from");
                     streamWriter.WriteLine(
